@@ -1,0 +1,28 @@
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0 # Versão atualizada
+    hooks:
+    -   id: trailing-whitespace
+        args: ['--markdown-linebreak-ext=md']
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: detect-private-key
+    -   id: check-added-large-files
+
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.4.2 # Versão atualizada
+    hooks:
+    -   id: black
+        language_version: python3.11
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+    -   id: isort
+        # name: isort (python) # Opcional, removido por ser redundante
+
+-   repo: https://github.com/pycqa/flake8 # Repositório corrigido para o GitHub
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
