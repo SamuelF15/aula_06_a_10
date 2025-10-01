@@ -1,6 +1,6 @@
 import csv
 
-caminho_arquivo = "./DATASETS/vendas.csv"
+caminho_arquivo = "./data/vendas.csv"
 
 
 def ler_csv(caminho_arquivo: str) -> list[dict]:

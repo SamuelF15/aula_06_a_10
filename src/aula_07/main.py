@@ -1,6 +1,6 @@
 from etl import filtrar_vendas_maior_1000, ler_csv, somar_valores_venda
 
-path_arquivo = "./DATASETS/vendas.csv"
+path_arquivo = "./data/vendas.csv"
 
 
 vendas_itens: list[dict] = ler_csv(path_arquivo)
