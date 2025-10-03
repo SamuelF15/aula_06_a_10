@@ -6,12 +6,14 @@ authors = [
     {name = "Samuel Figueiredo",email = "samuel.lobo2004@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "blue (>=0.9.1,<0.10.0)",
     "pre-commit (>=4.3.0,<5.0.0)",
     "pandas (>=2.3.3,<3.0.0)",
-    "pyarrow (>=21.0.0,<22.0.0)"
+    "pyarrow (>=21.0.0,<22.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "tenacity (>=9.1.2,<10.0.0)"
 ]
 
 
